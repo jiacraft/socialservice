@@ -1,3 +1,10 @@
+#############################################################################################
+  A Spring boot based application, 
+  offer tweet message service, 
+  can be containized as standard Docker image
+#############################################################################################
+
+
 - github link: https://github.com/jiacraft/socialservice.git
 
 - at current phase, all users are set within the app
@@ -26,7 +33,7 @@
 
 	mvn package docker:build
 
-  a docker iamge should be craeted with name: bjia/intuit-social-service
+  a docker iamge should be created with name: bjia/intuit-social-service
 
 - to run app from local docker container (need to have docker/Toolbox installed )	
 
