@@ -19,7 +19,7 @@
 		
 - to look at the web, created by spring boot, goto:
 
-		http://localhost:8080
+		http://localhost:8080/feed
 
 
 - to create docker image, from where the project root (where pom.xml is located), type:
@@ -42,3 +42,7 @@
 	- run docker container for the image created of our app, need to bind container port to host port
 
 		docker run -p 8080:8080 bjia/intuit-social-service
+
+	- to access the application
+
+		http://$(docker-machine env default):8080/feed

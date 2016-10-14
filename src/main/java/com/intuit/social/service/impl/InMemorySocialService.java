@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -32,6 +33,7 @@ public class InMemorySocialService implements SocialService {
 	private UserFollowerRepository userFollowerRepo;
 	
 	@Override
+	@Cacheable("tweets")
 	public List<Message> getLatestOneHundredMessages(String userId) {
 		logger.info("retrieve latest 100 message for user id [" + userId + "]");
 		

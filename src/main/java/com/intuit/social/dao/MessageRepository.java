@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @version 
  */
 @Transactional
+
 public interface MessageRepository extends JpaRepository<Message, Long> {
 	
 	final static String QUERY_LATEST_MESSAGE = "SELECT m from Message m, FollowedUser fu WHERE fu.followedUser = m.user and fu.user = :user ";
