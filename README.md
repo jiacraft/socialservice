@@ -28,6 +28,9 @@
 
 		http://localhost:8080/feed
 
+#
+# Steps to create docker image and run the app in Docker container
+#
 
 - to create docker image, from where the project root (where pom.xml is located), type:
 
@@ -38,12 +41,15 @@
 - to run app from local docker container (need to have docker/Toolbox installed )	
 
  	- start a docker machine (use default is ok)
+
 		docker-machine start default
 
 	- check and record the ip of docker machine
+
 		docker-machine ip default
 
-	- connect current shell to the machine (default)
+	- connect current shell to the machine (default) 
+
 		eval "$(docker-machine env default)"
 
 	- run docker container for the image created of our app, need to bind container port to host port
