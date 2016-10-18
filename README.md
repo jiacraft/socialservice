@@ -29,9 +29,9 @@
 		http://localhost:8080/feed
 
 ##############################################################################################
-# Steps to create docker image and run the app in Docker container
-# 
-# NOTE: docker need to be up and running prior to perform the following steps
+ Steps to create docker image and run the app in Docker container
+ 
+ NOTE: docker need to be up and running prior to perform the following steps
 ##############################################################################################
 
 - to create docker image, from where the project root (where pom.xml is located), type:
